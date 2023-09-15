@@ -1,5 +1,5 @@
 <?php
-
+defined('ABSPATH') || exit;
 $post_type = get_post_type();
 
 if($post_type === \ShopEngine\Core\Template_Cpt::TYPE) {

@@ -4,7 +4,7 @@
  * Plugin Name: ShopEngine
  * Plugin URI:  https://wpmet.com/plugin/shopengine
  * Description: ShopEngine is the most-complete WooCommerce template builder for Elementor. It helps you build and customize the single product page, cart page, archive page, checkout page, order page, my account page, and thank-you page from scratch. It also packed with product comparison, wishlist, quick view, and variation swatches etc.
- * Version: 4.3.1
+ * Version: 4.4.0
  * Author: Wpmet
  * Author URI:  https://wpmet.com
  * Text Domain: shopengine
@@ -20,6 +20,13 @@ defined('ABSPATH') || exit;
 require_once __DIR__ . '/autoloader.php';
 require_once __DIR__ . '/utils/global-helper.php';
 
+require_once plugin_dir_path( __FILE__ ) . 'utils/notice/notice.php';
+require_once plugin_dir_path( __FILE__ ) . 'utils/banner/banner.php';
+
+require_once plugin_dir_path( __FILE__ ) . 'utils/stories/stories.php';
+require_once plugin_dir_path( __FILE__ ) . 'utils/pro-awareness/pro-awareness.php';
+
+
 final class ShopEngine {
 
 	const SHOPENGINE_PREFIX = 'shopengine-builder';
@@ -32,7 +39,7 @@ final class ShopEngine {
 	 *
 	 */
 	public static function version() {
-		return '4.3.1';
+		return '4.4.0';
 	}
 
 

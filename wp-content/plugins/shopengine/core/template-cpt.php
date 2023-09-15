@@ -106,7 +106,7 @@ class Template_Cpt {
 
 			$actions['shopengine_edit_with_gutenberg'] = sprintf(
 				'<a title="' . $action . '" href="%1$s">%2$s</a>',
-				$this->get_edit_url($post->ID),
+				wp_nonce_url($this->get_edit_url($post->ID)),
 				esc_html__('Edit with Gutenberg', 'shopengine')
 			);
 		}

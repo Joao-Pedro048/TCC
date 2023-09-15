@@ -1,4 +1,4 @@
-
+<?php defined('ABSPATH') || exit; ?>
 <div class="shopengine-filterable-product-wrap">
     <?php
         $uid        = [];

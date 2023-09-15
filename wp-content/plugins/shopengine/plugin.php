@@ -2,6 +2,8 @@
 
 namespace ShopEngine;
 
+defined('ABSPATH') || exit;
+
 use ShopEngine\Compatibility\Conflicts\Manifest as Conflict_Manifest;
 use ShopEngine\Core\Builders\Base;
 use ShopEngine\Compatibility\Migrations\LangMigration;
@@ -13,7 +15,6 @@ use ShopEngine\Libs\Updater\Init as Updater;
 use ShopEngine\Modules\Manifest as Module_Manifest;
 use ShopEngine\Widgets\Manifest;
 
-defined('ABSPATH') || exit;
 
 /**
  * Plugin final Class.
@@ -32,9 +33,13 @@ final class Plugin {
 	public function __construct() {
 		// load autoload method
 		Autoloader::run();
+        add_action( 'wp_ajax_shopengine_admin_action', [\ShopEngine\Utils\Util::class, 'shopengine_admin_action'] );
 	}
 
-
+	public function utils_url()
+    {
+        return $this->plugin_url() . 'utils/';
+    }
 	/**
 	 * Public function init.
 	 * call function for all
@@ -150,8 +155,15 @@ final class Plugin {
 			add_theme_support('wc-product-gallery-slider');
 		}
 
+		
+        $filter_string = ''; // elementskit,metform-pro
+        $filter_string .= ((!in_array('elementskit/elementskit.php', apply_filters('active_plugins', get_option('active_plugins')))) ? '' : ',elementskit');
+        $filter_string .= (!class_exists('\MetForm\Plugin') ? '' : ',metform');
+        $filter_string .= (!class_exists('\MetForm_Pro\Plugin') ? '' : ',metform-pro');
+		
 		#Registering new post-type & etc
 		Base::instance()->init();
+		
 
 		Rating::instance('shopengine')
 		->set_plugin( 'ShopEngine', 'https://wpmet.com/wordpress.org/rating/shopengine' )
@@ -160,10 +172,33 @@ final class Plugin {
 		->set_first_appear_day( 7 )
 		->set_condition( true )
 		->call();
+		
+		if ( is_admin() && \ShopEngine\Utils\Util::get_settings( 'shopengine_user_consent_for_banner', 'true' ) == 'true' ) {
+
+		 /**
+         * Show WPMET stories widget in dashboard
+         */
+		
+		 \Wpmet\Libs\Stories::instance('shopengine')
+
+		 ->set_filter($filter_string)
+		 ->set_plugin('ShopEngine', 'https://wpmet.com/plugin/shopengine/')
+		 ->set_api_url('https://api.wpmet.com/public/stories/')
+		 ->call();
+
+		 // banner
+		 \Wpmet\Libs\Banner::instance('shopengine')
+		 ->set_filter(ltrim($filter_string, ','))
+		 ->set_api_url('https://api.wpmet.com/public/jhanda')
+		 ->set_plugin_screens('edit-shopengine-template')
+		 ->set_plugin_screens('edit-shopengine-template')
+		 ->call();
+		}
 
 		\ShopEngine\Core\MultiLanguage\Language::instance()->init();
 
 		\ShopEngine\Core\Settings\Base::instance()->init();
+
 
 		new Libs\Select_Api\Base();
 

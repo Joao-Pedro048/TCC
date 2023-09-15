@@ -2,6 +2,7 @@
 /**
  * This template will overwrite the WooCommerce file: woocommerce/archive-product.php.
  */
+defined('ABSPATH') || exit;
 
 \ShopEngine\Widgets\Widget_Helper::instance()->wc_template_part_filter_by_match('woocommerce/content-product.php', 'templates/content-product.php');
 \ShopEngine\Widgets\Widget_Helper::instance()->wc_template_filter();

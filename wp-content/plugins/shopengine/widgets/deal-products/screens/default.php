@@ -1,4 +1,5 @@
 <?php
+   defined('ABSPATH') || exit;
    $args = array(
          'post_type' => ['product', 'product_variation'],
          'status'    => 'publish',

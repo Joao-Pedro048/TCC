@@ -27,7 +27,7 @@ class Comparison_Cookie {
 			$product_id_from_cookie =  $id;
 		}
 
-		$explode = explode( ',', $product_id_from_cookie );
+		$explode = explode( ',', $product_id_from_cookie ?? '' );
 
 		foreach ($explode as $key => $id){
 			if(!$id || $id == 0){

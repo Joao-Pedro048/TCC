@@ -2,8 +2,9 @@
 
 namespace ShopEngine\Widgets;
 
-use ShopEngine\Traits\Singleton;
+defined('ABSPATH') || exit;
 
+use ShopEngine\Traits\Singleton;
 class Widget_Helper {
 
 	use Singleton;

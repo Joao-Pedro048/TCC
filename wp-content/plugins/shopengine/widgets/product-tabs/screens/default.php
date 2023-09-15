@@ -1,5 +1,5 @@
 <?php
-
+defined('ABSPATH') || exit;
 add_filter('woocommerce_product_tabs', function ($tabs) {
 
 	if(isset($tabs['description'])) {

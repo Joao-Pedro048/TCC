@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit;?>
 <div class="shopengine-checkout-shipping-methods">
     <table class="shopengine_woocommerce_shipping_methods">
 		<?php

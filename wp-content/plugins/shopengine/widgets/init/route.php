@@ -3,7 +3,7 @@
 namespace ShopEngine\Widgets\Init;
 
 use ShopEngine\Base\Api;
-
+defined('ABSPATH') || exit;
 class Route extends Api
 {
 

@@ -1,4 +1,5 @@
 <?php
+defined('ABSPATH') || exit;
 // Editor Mode Check.
 $in_editor_mode = \ShopEngine\Core\Template_Cpt::TYPE == get_post_type();
 ?>

@@ -1,10 +1,10 @@
-=== ShopEngine Elementor WooCommerce Builder Addon - All in One WooCommerce Solution ===
+﻿=== ShopEngine Elementor WooCommerce Builder Addon – All in One WooCommerce Solution ===
 Contributors: xpeedstudio, Ataurr, emranio
 Tags: WooCommerce, Elementor, WooCommerce Builder, WooCommerce Elementor,  WooCommerce Product, Woo Product, WooCommerce Template, Woo builder, WooCommerce Gutenberg Blocks
 
 
 Tested up to: 6.3
-Stable tag: 4.3.1
+Stable tag: 4.4.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -629,6 +629,12 @@ If you like using the ShopEngine WooCommerce template builder, then consider che
 Visit  [wpmet](https://wpmet.com/)  to learn more about how to get the best of WordPress with  [Tutorial, Tips & Tricks](https://wpmet.com/blog)!
 
 == Changelog ==
+
+v4.4.0// 13-09-2023
+Fixed: Translation issue in product tab.
+Fixed: Story box conflict with Rank Math SEO plugin.
+Fixed: best selling product image issue.
+Fixed : Direct access using file path.
 
 v4.3.1 // 04-09-2023
 Fixed: Fixed admin notice permission issue.

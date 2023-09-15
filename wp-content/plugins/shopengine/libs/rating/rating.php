@@ -35,6 +35,7 @@ class Rating
 	 * @param string|null $unique_id
 	 * @return mixed
 	 */
+	
 	public static function instance($text_domain = null, $unique_id = null)
 	{
 		if ($text_domain == null) {
@@ -157,8 +158,10 @@ class Rating
 	 *      🔥 fire the rating functionality
 	 * -------------------------------------------
 	 */
+
 	public function fire()
-	{
+	{ 
+
 		if (current_user_can('update_plugins')) {
 
 			$current_screen = get_current_screen();
@@ -166,27 +169,30 @@ class Rating
 			if (!$this->is_current_screen_allowed($current_screen->id) || $this->condition_status === false || get_option($this->text_domain . '_never_show') == 'yes') {
 				return;
 			}
-
-			if (!$this->is_installation_date_exists()) {
-				$this->set_installation_date();
-			}
-
-			if (get_option($this->text_domain . '_ask_me_later') == 'yes') {
-
-				$this->days                 = '30';
-				$this->duplication          = true;
-				$this->never_show_triggered = true;
-				if ($this->get_remaining_days() >= $this->days) {
-					$this->duplication = false;
-				}
-			}
-
-			$this->display_message_box();
-
 			add_action('admin_footer', array($this, 'scripts'), 9999);
+
+			if($this->action_on_fire()) {
+				if (!$this->is_installation_date_exists()) {
+					$this->set_installation_date();
+				}
+
+				if (get_option($this->text_domain . '_ask_me_later') == 'yes') {
+
+					$this->days                 = '30';
+					$this->duplication          = true;
+					$this->never_show_triggered = true;
+					if ($this->get_remaining_days() >= $this->days) {
+						$this->duplication = false;
+					}
+				}
+				$this->display_message_box();
+			}
+
 		}
 	}
-
+	private function action_on_fire() {
+		return true;
+	}
 	public function set_installation_date()
 	{
 		add_option($this->text_domain . '_install_date', date('Y-m-d h:i:s'));
@@ -259,7 +265,7 @@ class Rating
 	 *  Ask me later functionality
 	 *----------------------------------
 	 */
-	
+
 	public function display_message_box()
 	{
 		if (!$this->duplication) {

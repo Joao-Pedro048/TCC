@@ -18,8 +18,6 @@ class Archive extends Base {
 
 		// add_action('woocommerce_before_shop_loop_item', [$this, 'delayed_hook_conflicts'], 9999);
 		$this->delayed_hook_conflicts();
-
-		
 	}
 
 	public function delayed_hook_conflicts() {

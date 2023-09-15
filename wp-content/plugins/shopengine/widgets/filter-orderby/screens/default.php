@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div class="shopengine-filter-orderby">
     <form action="#" method="get"
           class="shopengine-filter shopengine-filter-orderby-<?php echo esc_html__($settings['shopengine_orderby_type'], 'shopengine') ?>">

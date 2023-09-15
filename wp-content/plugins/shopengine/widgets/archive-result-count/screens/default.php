@@ -1,6 +1,7 @@
 <div class="shopengine-archive-result-count">
 	<?php
-
+	defined('ABSPATH') || exit;
+	
 	\ShopEngine\Widgets\Widget_Helper::instance()->wc_template_filter();
 
 	if(\Elementor\Plugin::$instance->editor->is_edit_mode() || is_preview()) { ?>

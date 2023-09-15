@@ -2,9 +2,9 @@
 # This file is distributed under the GPLv3.
 msgid ""
 msgstr ""
-"Project-Id-Version: ShopEngine 4.3.1\n"
+"Project-Id-Version: ShopEngine 4.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/shopengine\n"
-"POT-Creation-Date: 2023-09-06 10:26:58+00:00\n"
+"POT-Creation-Date: 2023-09-14 05:43:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -820,27 +820,27 @@ msgstr ""
 msgid "ShopEngine"
 msgstr ""
 
-#: core/settings/base.php:132 core/settings/base.php:133
+#: core/settings/base.php:135 core/settings/base.php:136
 msgid "Getting Started"
 msgstr ""
 
-#: core/settings/base.php:142 core/settings/base.php:143
+#: core/settings/base.php:145 core/settings/base.php:146
 msgid "Modules"
 msgstr ""
 
-#: core/settings/base.php:150 core/settings/base.php:151
+#: core/settings/base.php:153 core/settings/base.php:154
 msgid "Widgets"
 msgstr ""
 
-#: core/settings/base.php:158 core/settings/base.php:159
+#: core/settings/base.php:161 core/settings/base.php:162
 msgid "Get Help"
 msgstr ""
 
-#: core/settings/base.php:168 core/settings/base.php:169
+#: core/settings/base.php:171 core/settings/base.php:172
 msgid "License"
 msgstr ""
 
-#: core/settings/base.php:176 core/settings/base.php:177
+#: core/settings/base.php:179 core/settings/base.php:180
 msgid "Upgrade to Premium"
 msgstr ""
 
@@ -1404,15 +1404,15 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: plugin.php:81
+#: plugin.php:86
 msgid "Go To Shopengine"
 msgstr ""
 
-#: plugin.php:82
+#: plugin.php:87
 msgid "Go To ShopenginePro"
 msgstr ""
 
-#: plugin.php:84 widgets/add-to-cart/add-to-cart.php:33
+#: plugin.php:89 widgets/add-to-cart/add-to-cart.php:33
 #: widgets/deal-products/deal-products.php:149
 #: widgets/filterable-product-list/filterable-product-list.php:133
 #: widgets/product-category-lists/product-category-lists.php:26
@@ -1423,35 +1423,35 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: plugin.php:91
+#: plugin.php:96
 msgid "Go Pro"
 msgstr ""
 
-#: plugin.php:330
+#: plugin.php:365
 msgid "Activate WooCommerce"
 msgstr ""
 
-#: plugin.php:335
+#: plugin.php:370
 msgid "Install WooCommerce"
 msgstr ""
 
-#: plugin.php:345
+#: plugin.php:380
 msgid "ShopEngine requires woocommerce Plugin, which is currently NOT RUNNING."
 msgstr ""
 
-#: plugin.php:359
+#: plugin.php:394
 msgid "Activate Elementor"
 msgstr ""
 
-#: plugin.php:364
+#: plugin.php:399
 msgid "Install Elementor"
 msgstr ""
 
-#: plugin.php:374 plugin.php:395
+#: plugin.php:409 plugin.php:430
 msgid "ShopEngine requires Elementor version %1$s+, which is currently NOT RUNNING."
 msgstr ""
 
-#: plugin.php:386
+#: plugin.php:421
 msgid "Update Elementor"
 msgstr ""
 
@@ -1591,11 +1591,11 @@ msgid "Product Thumbnail"
 msgstr ""
 
 #: utils/helper.php:345 widgets/deal-products/deal-products.php:219
-#: widgets/deal-products/screens/default.php:108
+#: widgets/deal-products/screens/default.php:109
 msgid "Days"
 msgstr ""
 
-#: utils/helper.php:346 widgets/deal-products/screens/default.php:114
+#: utils/helper.php:346 widgets/deal-products/screens/default.php:115
 msgid "Hours"
 msgstr ""
 
@@ -1622,12 +1622,41 @@ msgstr ""
 msgid "Notification"
 msgstr ""
 
+#: utils/pro-awareness/pro-awareness.php:159
+#: utils/pro-awareness/pro-awareness.php:174
+msgid "Default Title"
+msgstr ""
+
+#: utils/pro-awareness/pro-awareness.php:243
+msgid "Take your website to the next level"
+msgstr ""
+
+#: utils/pro-awareness/pro-awareness.php:244
+msgid "We have some plugins you can install to get most from Wordpress."
+msgstr ""
+
 #: utils/shipping-calculation.php:47
 msgid "Please enter a valid postcode / ZIP."
 msgstr ""
 
 #: utils/shipping-calculation.php:65
 msgid "Shipping costs updated."
+msgstr ""
+
+#: utils/stories/stories.php:255
+msgid "Wpmet Stories"
+msgstr ""
+
+#: utils/stories/views/template.php:137
+msgid "Need Help?"
+msgstr ""
+
+#: utils/stories/views/template.php:141
+msgid "Blog"
+msgstr ""
+
+#: utils/stories/views/template.php:145
+msgid "Facebook Community"
 msgstr ""
 
 #: widgets/add-to-cart/add-to-cart.php:47
@@ -3740,7 +3769,7 @@ msgstr ""
 msgid "Top Spacing (px)"
 msgstr ""
 
-#: widgets/archive-products/screens/default.php:161
+#: widgets/archive-products/screens/default.php:162
 msgid "Archive Product Left Image"
 msgstr ""
 
@@ -3748,7 +3777,7 @@ msgstr ""
 msgid "Result Count"
 msgstr ""
 
-#: widgets/archive-result-count/screens/default.php:8
+#: widgets/archive-result-count/screens/default.php:9
 msgid "Showing all results"
 msgstr ""
 
@@ -3876,19 +3905,19 @@ msgstr ""
 msgid "List View : Product Title"
 msgstr ""
 
-#: widgets/archive-view-mode/screens/default.php:4
+#: widgets/archive-view-mode/screens/default.php:5
 msgid "Gird View"
 msgstr ""
 
-#: widgets/archive-view-mode/screens/default.php:9
+#: widgets/archive-view-mode/screens/default.php:10
 msgid "Gird 3 Columns View"
 msgstr ""
 
-#: widgets/archive-view-mode/screens/default.php:14
+#: widgets/archive-view-mode/screens/default.php:15
 msgid "Gird 2 Columns View"
 msgstr ""
 
-#: widgets/archive-view-mode/screens/default.php:19
+#: widgets/archive-view-mode/screens/default.php:20
 msgid "List View"
 msgstr ""
 
@@ -5107,27 +5136,27 @@ msgstr ""
 msgid "Active line height"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:119
+#: widgets/deal-products/screens/default.php:120
 msgid "Min"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:124
+#: widgets/deal-products/screens/default.php:125
 msgid "Sec"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:134
+#: widgets/deal-products/screens/default.php:135
 msgid "Dealing Product"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:165
+#: widgets/deal-products/screens/default.php:166
 msgid "Available:"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:169
+#: widgets/deal-products/screens/default.php:170
 msgid "Sold:"
 msgstr ""
 
-#: widgets/deal-products/screens/default.php:185
+#: widgets/deal-products/screens/default.php:186
 msgid "No deal products available"
 msgstr ""
 
@@ -5195,8 +5224,8 @@ msgstr ""
 msgid "Sort by title: z to a"
 msgstr ""
 
-#: widgets/filter-orderby/screens/default.php:7
-#: widgets/filter-orderby/screens/default.php:18
+#: widgets/filter-orderby/screens/default.php:8
+#: widgets/filter-orderby/screens/default.php:19
 msgid "Shop order"
 msgstr ""
 
@@ -5443,27 +5472,27 @@ msgstr ""
 msgid "ShopEngine My Account"
 msgstr ""
 
-#: widgets/notice/screens/default.php:5
+#: widgets/notice/screens/default.php:7
 msgid "View Cart Item"
 msgstr ""
 
-#: widgets/notice/screens/default.php:5
+#: widgets/notice/screens/default.php:7
 msgid "View cart"
 msgstr ""
 
-#: widgets/notice/screens/default.php:5
+#: widgets/notice/screens/default.php:7
 msgid "“Beanie” has been added to your cart."
 msgstr ""
 
-#: widgets/notice/screens/default.php:11
+#: widgets/notice/screens/default.php:13
 msgid "Billing First name"
 msgstr ""
 
-#: widgets/notice/screens/default.php:11 widgets/notice/screens/default.php:14
+#: widgets/notice/screens/default.php:13 widgets/notice/screens/default.php:16
 msgid "is a required field."
 msgstr ""
 
-#: widgets/notice/screens/default.php:14
+#: widgets/notice/screens/default.php:16
 msgid "Billing Email address"
 msgstr ""
 
@@ -6128,31 +6157,31 @@ msgstr ""
 msgid "Submit Button"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:8
+#: widgets/product-review/screens/dummy-review.php:9
 msgid "avatar"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:47
+#: widgets/product-review/screens/dummy-review.php:48
 msgid "Comment Replay Cancel"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:54
+#: widgets/product-review/screens/dummy-review.php:55
 msgid "One Star"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:55
+#: widgets/product-review/screens/dummy-review.php:56
 msgid "Two Star"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:56
+#: widgets/product-review/screens/dummy-review.php:57
 msgid "Three Star"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:57
+#: widgets/product-review/screens/dummy-review.php:58
 msgid "Four Star"
 msgstr ""
 
-#: widgets/product-review/screens/dummy-review.php:58
+#: widgets/product-review/screens/dummy-review.php:59
 msgid "Five Star"
 msgstr ""
 
@@ -6286,6 +6315,7 @@ msgid "Table Cell Divider Color"
 msgstr ""
 
 #: widgets/product-tabs/product-tabs.php:766
+#: widgets/product-tabs/product-tabs.php:1962
 msgid "Average Rating"
 msgstr ""
 
@@ -6329,6 +6359,10 @@ msgstr ""
 
 #: widgets/product-tabs/product-tabs.php:1107
 msgid "Review Heading"
+msgstr ""
+
+#: widgets/product-tabs/product-tabs.php:1967
+msgid " Review"
 msgstr ""
 
 #: widgets/product-tags/product-tags.php:21
@@ -6428,11 +6462,11 @@ msgstr ""
 msgid "Discount badge shows when Badges module is on"
 msgstr ""
 
-#: widgets/recently-viewed-products/screens/default.php:114
+#: widgets/recently-viewed-products/screens/default.php:115
 msgid "Ends in "
 msgstr ""
 
-#: widgets/recently-viewed-products/screens/default.php:125
+#: widgets/recently-viewed-products/screens/default.php:126
 msgid "No recently viewed products to display"
 msgstr ""
 

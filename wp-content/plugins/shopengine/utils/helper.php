@@ -304,7 +304,7 @@ class Helper {
 		global $product;
 		?>
         <div class='product-thumb'>
-            <a title="<?php esc_html_e('Product Thumbnail','shopengine')?>" href="<?php echo esc_url(get_the_permalink()); ?>">
+            <a title="<?php esc_html_e('Product Thumbnail','shopengine')?>" href="<?php echo esc_url(get_the_permalink($product->get_id())); ?>">
 				<?php shopengine_content_render(woocommerce_get_product_thumbnail($product->get_id())) ?>
             </a>
 

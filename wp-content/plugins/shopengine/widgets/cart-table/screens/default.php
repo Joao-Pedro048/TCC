@@ -1,5 +1,5 @@
 <?php
-
+defined('ABSPATH') || exit;
 if(get_post_type() == \ShopEngine\Core\Template_Cpt::TYPE) {
 	wc()->frontend_includes();
 

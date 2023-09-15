@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div class="shopengine-recently-viewed-products">
     <div class="recent-viewed-product-list">
 		<?php

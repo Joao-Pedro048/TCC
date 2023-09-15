@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div class="shopengine-archive-view-mode">
     <div class="shopengine-archive-view-mode-switch-list">
         <?php if($settings['shopengine_view_mode_four_grid'] === 'yes'): ?>

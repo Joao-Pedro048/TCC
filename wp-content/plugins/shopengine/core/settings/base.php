@@ -79,7 +79,7 @@ class Base {
 			wp_enqueue_script('htm', \ShopEngine::plugin_url() . 'assets/js/htm.js', null, \ShopEngine::version(), true);
 
 			wp_enqueue_script('shopengine-admin-js', \ShopEngine::plugin_url() . 'assets/js/app.js', ['htm', 'jquery', 'wp-element'], \ShopEngine::version(), true);
-
+			
 			// page template lists
 			$page_templates = Page_Templates::instance()->getTemplates();
 
@@ -104,8 +104,11 @@ class Base {
 				'default_builder'     => did_action('elementor/loaded') ? \ShopEngine\Core\Builders\Action::EDIT_WITH_ELEMENTOR : \ShopEngine\Core\Builders\Action::EDIT_WITH_GUTENBERG,
 				'license_activated_message' => sprintf(esc_html__('Congratulations! Your product is activated for "%s"', 'shopengine'), parse_url(home_url(), PHP_URL_HOST)),			
 				'is_rtl'			=> is_rtl() ? 'true' : 'false',
+				'ajaxurl' => admin_url(  ).'admin-ajax.php',
+				'nonce'   => wp_create_nonce(),
+				'banner_show' => \ShopEngine\Utils\Util::get_settings( 'shopengine_user_consent_for_banner', 'true' )
 			]);
-
+			
 			wp_enqueue_style('shopengine-admin-style', \ShopEngine::plugin_url() . 'assets/css/admin-style.css', false, \ShopEngine::version());
 		}
 

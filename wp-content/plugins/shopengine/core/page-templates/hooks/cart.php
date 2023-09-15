@@ -44,7 +44,7 @@ class Cart extends Base {
 	}
 
 	protected function template_include_pre_condition(): bool {
-
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- It's a fronted user part, not possible to verify nonce here
 		return (is_cart() || (isset($_REQUEST['wc-ajax']) &&  $_REQUEST['wc-ajax'] == 'update_shipping_method'));
 	}
 

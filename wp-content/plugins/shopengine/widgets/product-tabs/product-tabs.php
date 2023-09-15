@@ -1959,12 +1959,12 @@ class ShopEngine_Product_Tabs extends \ShopEngine\Base\Widget
 
 		$htm = '</h2>';
 		$htm .= '<div class="se-rating-container">';
-		$htm .= '<h2>Average rating</h2>';
+		$htm .= '<h2> ' . esc_html__('Average Rating', 'shopengine') . '</h2>';
 		$htm .= '<div class="se-avg-rating">' . $average . '</div>';
 
 		$htm .= wc_get_rating_html($average, $count);
 
-		$htm .= '<strong class="se-avg-count">' . $count . ' Review</strong>';
+		$htm .= '<strong class="se-avg-count">' . $count .' ' . esc_html__(' Review', 'shopengine') . '</strong>';
 		$htm .= $details;
 		$htm .= '</div><h2 class="woocommerce-Reviews-title">';
 

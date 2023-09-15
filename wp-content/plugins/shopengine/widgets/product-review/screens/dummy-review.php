@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div id="reviews" class="woocommerce-Reviews">
 
    <div id="comments">

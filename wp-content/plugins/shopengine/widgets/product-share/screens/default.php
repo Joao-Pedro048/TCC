@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div class="shopengine-product-share">
 	<?php
 

@@ -1,4 +1,6 @@
-<?php if (\Elementor\Plugin::$instance->editor->is_edit_mode() || is_preview()):
+<?php 
+defined('ABSPATH') || exit;
+if (\Elementor\Plugin::$instance->editor->is_edit_mode() || is_preview()):
 	$page_type = \ShopEngine\Widgets\Products::instance()->get_template_type_by_id(get_the_ID());
     if (!empty($page_type) && $page_type === 'single'): ?>
 			<div class="woocommerce-message" role="alert">

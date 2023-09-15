@@ -1,7 +1,7 @@
 <?php
 
 namespace ShopEngine\Widgets;
-
+defined('ABSPATH') || exit;
 
 class Prod_Short_Code extends \WC_Shortcode_Products {
 
